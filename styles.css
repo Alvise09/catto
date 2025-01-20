@@ -1,0 +1,58 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1900x800') no-repeat center center;
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #f8f9fa;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Make images responsive */
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+/* Customize Button */
+.btn-light {
+    color: #007bff;
+    background-color: white;
+    border: 1px solid #007bff;
+}
+
+.btn-light:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}
