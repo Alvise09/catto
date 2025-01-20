@@ -1,58 +1,163 @@
-/* General Styles */
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
-}
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+  }
+  
+  /* Navigation Bar */
+  .custom-navbar {
+    background-color: #0056b3; /* Dark blue background */
+  }
+  
+  .custom-navbar .navbar-brand,
+  .custom-navbar .nav-link {
+    color: white;
+  }
+  
+  .custom-navbar .nav-link.active,
+  .custom-navbar .nav-link:hover {
+    color: #ffcc00; /* Highlight color */
+  }
+  
 
-.hero {
-    background: url('https://via.placeholder.com/1900x800') no-repeat center center;
-    background-size: cover;
-}
-
-.hero h1 {
-    font-size: 3em;
-    font-weight: bold;
-}
-
-.hero p {
+.hero-section {
+    background: linear-gradient(to right, #1e90ff, #00bfff); /* Blue gradient */
+    color: white;
+    padding: 100px 20px;  /* Space around the text */
+    text-align: center;    /* Center the text */
+    border-radius: 10px;   /* Optional for rounded corners */
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem; /* Adjust the size as needed */
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem; /* Adjust the size as needed */
+  }
+  
+  
+  .hero-section p {
     font-size: 1.2em;
-}
-
-.card {
-    margin-bottom: 20px;
-}
-
-footer {
-    background-color: #f8f9fa;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Make images responsive */
-.card-img-top {
-    width: 100%;
-    height: auto;
-}
-
-/* Customize Button */
-.btn-light {
+  }
+  
+  .hero-section .btn {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 1.1em;
+  }
+  
+  /* Card Section */
+  .card {
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .card-icon {
+    font-size: 2.5em;
     color: #007bff;
-    background-color: white;
-    border: 1px solid #007bff;
-}
-
-.btn-light:hover {
+    margin-top: 10px;
+  }
+  
+  .card .btn {
     background-color: #007bff;
     color: white;
-}
-
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2em;
+    border-radius: 50px;
+    margin-top: 15px;
+    padding: 10px 20px;
+  }
+  
+  /* Additional Content Section */
+  .bg-light {
+    background-color: #f4f6f9 !important;
+  }
+  
+  /* Section Titles */
+  .section-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #007bff;
+  }
+  
+  .lead {
+    font-size: 1.25em;
+    color: #555;
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #343a40;
+  }
+  
+  /* Testimonials Section */
+  blockquote {
+    font-style: italic;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2.5em;
     }
-
-    .hero p {
-        font-size: 1em;
+  
+    .section-title {
+      font-size: 2em;
     }
-}
+  
+    .card-icon {
+      font-size: 2em;
+    }
+  
+    .card-body p {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hero-section h1 {
+      font-size: 2em;
+    }
+  
+    .section-title {
+      font-size: 1.7em;
+    }
+  
+    .card-icon {
+      font-size: 1.8em;
+    }
+  
+    .card-body p {
+      font-size: 0.9em;
+    }
+  }
+  
